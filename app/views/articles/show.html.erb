@@ -8,4 +8,11 @@
   <%= @article.text %>
 </p>
 
+<h2>Comment</h2>
+<%= render @article.comments %>
+
+<h2>Add a comment:</h2>
+<%= render "comments/form" %>
+
 <%= link_to 'Back', articles_path %>
+<%= link_to 'edit', edit_article_path %>
